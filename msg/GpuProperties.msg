@@ -1,0 +1,8 @@
+string gpu_type
+uint8 device_id
+#unit MB
+ros_gpu_monitor/BytesWithUnit global_memory
+ros_gpu_monitor/HzWithUnit gpu_max_clock_rate
+uint8 multiprocessors
+uint32 cuda_cores
+ros_gpu_monitor/CudaInfo cuda_info

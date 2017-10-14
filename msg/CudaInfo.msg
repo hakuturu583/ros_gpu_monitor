@@ -1,0 +1,4 @@
+float32 driver_version
+float32 runtime_version
+float32 capability_major_version
+float32 capability_minor_version
