@@ -1,8 +1,13 @@
 string gpu_type
 uint8 device_id
-#unit MB
 ros_gpu_monitor/BytesWithUnit global_memory
+ros_gpu_monitor/BytesWithUnit constant_memory
+ros_gpu_monitor/BytesWithUnit shared_memory_per_block
 ros_gpu_monitor/HzWithUnit gpu_max_clock_rate
+uint32 register_per_block
+uint32 warp_size
+ros_gpu_monitor/BytesWithUnit max_pitch
 uint8 multiprocessors
-uint32 cuda_cores
+uint32[3] max_size_of_each_dimension_of_block
+uint32[3] max_size_of_each_dimension_of_grid
 ros_gpu_monitor/CudaInfo cuda_info

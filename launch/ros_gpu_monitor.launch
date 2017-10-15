@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="ros_gpu_monitor_node" pkg="ros_gpu_monitor" type="ros_gpu_monitor_node" args="" output="screen" respawn="true">
+    <param name="~publish_rate" value="10" type="int"/>
+    <param name="~device_id" value="0" type="int"/>
+  </node>
+</launch>

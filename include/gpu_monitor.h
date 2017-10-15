@@ -19,7 +19,7 @@ public:
   void run();
 private:
   ros::NodeHandle nh_;
-  void get_device_info_(int device_id);
+  bool get_device_info_(int device_id);
   cudaDeviceProp device_properties_;
   ros_gpu_monitor::GpuProperties gpu_properties_msg_;
   ros::Publisher gpu_properties_pub;
